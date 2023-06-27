@@ -10,12 +10,12 @@ class Password {
   private generarContrasena(): string {
     const caracteres =
       'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()-_';
-    let contraseña = '';
+    let contrasena = '';
     for (let i = 0; i < this.longitud; i++) {
       const randomIndex = Math.floor(Math.random() * caracteres.length);
-      contraseña += caracteres.charAt(randomIndex);
+      contrasena += caracteres.charAt(randomIndex);
     }
-    return contraseña;
+    return contrasena;
   }
 }
 
